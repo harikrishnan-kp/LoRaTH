@@ -26,12 +26,12 @@ Drivers
 |     |--- STM32L0xx_Nucleo: bsp for STM32L0xx_Nucleo 
 |     |--- STM32L1xx_Nucleo: bsp for STM32L1xx_Nucleo 
 |     |--- STM32L4xx_Nucleo: bsp for STM32L4xx_Nucleo 
-|     |--- sx1276mb1las:
-|     |--- sx1272mb2das:
-|     |--- sx1276mb1mas:
-|     |--- SX1261DVK1BAS:
-|     |--- SX1262DVK1CAS:
-|     |--- SX1262DVK1DAS:
+|     |--- sx1276mb1las: bsp for Semtech lora expansion board
+|     |--- sx1272mb2das: bsp for Semtech lora expansion board
+|     |--- sx1276mb1mas: bsp for Semtech lora expansion board
+|     |--- SX1261DVK1BAS: bsp for Semtech lora expansion board
+|     |--- SX1262DVK1CAS: bsp for Semtech lora expansion board
+|     |--- SX1262DVK1DAS: bsp for Semtech lora expansion board
 |
 |--- CMSIS
 |--- STM32L0xx_HAL_Driver
