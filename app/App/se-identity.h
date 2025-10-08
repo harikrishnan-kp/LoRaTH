@@ -87,10 +87,11 @@ extern "C" {
  */
 
 /*!
- * When set to 1 DevEui is LORAWAN_DEVICE_EUI
- * When set to 0 DevEui is automatically set with a value provided by MCU platform
+ * When set to 1 DevEui is LORAWAN_DEVICE_EUI (Uses the hardcoded value in the code)
+ * When set to 0 DevEui is automatically set with a value provided by MCU platform 
+ *      LoRaWAN middleware automatically generate a DevEUI from values in STM32 MCU’s unique ID registers
  */
-#define STATIC_DEVICE_EUI                                  0
+#define STATIC_DEVICE_EUI                                  1
 
 /*!
  * end-device IEEE EUI (big endian)
@@ -103,11 +104,11 @@ extern "C" {
 #define LORAWAN_JOIN_EUI                                   { 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01 }
 
 /*!
- * When set to 1 DevAddr is LORAWAN_DEVICE_ADDRESS
+ * When set to 1 DevAddr is LORAWAN_DEVICE_ADDRESS (Uses the hardcoded value in the code)
  * When set to 0 DevAddr is automatically set with a value provided by a pseudo
  *      random generator seeded with a value provided by the MCU platform
  */
-#define STATIC_DEVICE_ADDRESS                              0
+#define STATIC_DEVICE_ADDRESS                              1
 
 /*!
  * Device address on the network (big endian)
