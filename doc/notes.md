@@ -92,15 +92,15 @@ Middlewares
 #define ACTIVE_REGION                               LORAMAC_REGION_IN865
 ```
 ## Select Activation type (not verified yet)
-- check `app/APP/lora_app.h`
+- check applications -> LoRaWAN/APP/lora_app.h
 ```
-#define LORAWAN_DEFAULT_ACTIVATION_TYPE   ->  ACTIVATION_TYPE_OTAA / ACTIVATION_TYPE_ABP
+#define LORAWAN_DEFAULT_ACTIVATION_TYPE   -> ACTIVATION_TYPE_OTAA/ACTIVATION_TYPE_ABP
 ```
 ## Add activation keys
 - **Note**: secure-element implementation supports both 1.0.x and 1.1.x LoRaWAN versions. read the doc in app/App/se-identity.h to see the changes in keys
 ### ABP
 - Obtain the Device address, Network session key, and Application session key from Chirpstack server
-- Navigate to app -> App -> se-identity.h and change the following macros
+- Navigate to applications -> LoRaWAN -> App -> se-identity.h and change the following macros
 ```
 #define STATIC_DEVICE_ADDRESS    -> 1
 #define LORAWAN_DEVICE_ADDRESS   -> Device address from chirpstack
@@ -110,7 +110,7 @@ Middlewares
 ```
 ### OTA
 - Obtain the device EUI, join EUI, and application key from Chirpstack server
-- Navigate to app -> App -> se-identity.h and change the following macros
+- Navigate to applications -> LoRaWAN -> App -> se-identity.h and change the following macros
 ```
 #define STATIC_DEVICE_EUI       -> 1
 #define LORAWAN_DEVICE_EUI      -> Device EUI from Chirpstack
