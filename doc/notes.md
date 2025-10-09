@@ -1,5 +1,41 @@
 ## icube lrwan directory structure
 ```
+icube lrwan/
+├── Applications/
+|   ├── Core/ : application level codes of STM32
+│   │   └── 
+│   ├── LoRaWAN/ : application level codes of LoRaWAN
+│   │   ├── App/
+│   │   ├── Target/
+│   │   │   ├── sx1276mb1mas_conf.h : pin mapping of this shield
+│   │   │   └── radio_board_if.h : define which lora hat board's header file to include and its initialization.
+│   └── SW4STM32/
+|
+├── Middlewares/
+│   ├── LoRaWAN/
+│   │   └── ---
+│   ├── mbedTLS/
+│   │   └── ---
+│   ├── SubGHZ_Phy/
+│   │   ├── sx126x/ : folder containing codes for controlling sx126x radios (latest radio family by Semtech)
+│   │   │   ├── radio.c : main wrapper file that implements APIs for controlling sx126x transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc).
+│   │   │   ├── subghz_phy_version.h
+│   │   |   ├── sx126x.h
+│   │   │   └── sx126x.c
+│   │   ├── sx1272/ : folder containing codes for controlling sx1272 radios.
+│   │   │   ├── subghz_phy_version.h
+│   │   │   ├── sx1272.c : main wrapper file that implements APIs for controlling sx1272 transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc).
+│   │   │   ├── sx1272.h
+│   │   │   ├── sx1272Regs-Fsk.h
+│   │   │   └── sx1272Regs-LoRa.h
+│   │   ├── sx1276/ : folder containing codes for controlling sx1276 radios.
+│   │   │   ├── subghz_phy_version.h
+│   │   │   ├── sx1276.c : main wrapper file that implements APIs for controlling sx1276 transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc).
+│   │   │   ├── sx1276.h
+│   │   │   ├── sx1276Regs-Fsk.h
+│   │   │   └── sx1276Regs-LoRa.h
+│   │   └── radio.h : main header file for application-level code (it’s only the interface). It is internally mapped to LoRa radio’s main API files (sx1272.c, sx1276.c, sx126x etc).
+
 Drivers
 |--- BSP
 |     |--- B-L072Z-LRWAN1: bsp for B-L072Z-LRWAN1 board
@@ -38,42 +74,6 @@ Drivers
 |--- STM32L1xx_HAL_Driver
 |--- STM32L4xx_HAL_Driver
 |     |--- 
-
-Application
-|--- App
-|--- Core
-|--- SW4STM32
-|--- target
-|      |--- sx1276mb1mas_conf.h : pin mapping of this shield
-|      |--- radio_board_if.h : define which lora hat board's header file to include and its initialization.
-|
-|
-
-
-Middlewares
-|--- LoRaWAN
-|        |---
-|--- mbedTLS
-|        |---
-|--- SubGHZ_Phy
-|        |--- sx126x : folder that conataining codes for controlling sx126x radios. (letest radio family by semtech) 
-|        |      |--- radio.c : main wrapper file that impliments APIs for controlling sx126x transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc).
-|        |      |--- subghz_phy_version.h
-|        |      |--- sx126x.c
-|        |      |--- sx126x.h
-|        |--- sx1272 : folder that conataining codes for controlling sx1272 radios. 
-|        |      |--- subghz_phy_version.h
-|        |      |--- sx1272.c : main wrapper file that impliments APIs for controlling sx1272 transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc)
-|        |      |--- sx1272.h
-|        |      |--- sx1272Regs-Fsk.h
-|        |      |--- sx1272Regs-LoRa.h
-|        |--- sx1276 : folder that conataining codes for controlling sx1276 radios. 
-|        |      |--- subghz_phy_version.h
-|        |      |--- sx1276.c : main wrapper file that impliments APIs for controlling sx1276 transceiver (RadioInit, RadioSetTxConfig, RadioSend, RadioRx etc)
-|        |      |--- sx1276.h
-|        |      |--- sx1276Regs-Fsk.h
-|        |      |--- sx1276Regs-LoRa.h
-|        |--- radio.h : main header file for application-level code (it’s only the interface). it is internally mapped to lora radio`s main API files (sx1272.c,sx1276.c,sx126x etc)
 
 ```
 
