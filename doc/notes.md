@@ -13,7 +13,19 @@ icube lrwan/
 |
 ├── Middlewares/
 │   ├── LoRaWAN/
-│   │   └── ---
+|   |   ├── Conf/
+|   |   ├── Crypto/
+|   |   ├── LmHandler/
+|   |   ├── Mac/
+|   |   |   ├── Region/
+|   |   |   ├── LoRaMac.c
+|   |   |   ├── LoRaMac.h
+|   |   |   ├── LoRaMacAdr.c
+|   |   |   ├── LoRaMacAdr.h
+|   |   |   ├──
+|   |   |   ├──
+|   |   |   ├──
+│   │   └── Utilities/
 │   ├── mbedTLS/
 │   │   └── ---
 │   ├── SubGHZ_Phy/
@@ -35,45 +47,43 @@ icube lrwan/
 │   │   │   ├── sx1276Regs-Fsk.h
 │   │   │   └── sx1276Regs-LoRa.h
 │   │   └── radio.h : main header file for application-level code (it’s only the interface). It is internally mapped to LoRa radio’s main API files (sx1272.c, sx1276.c, sx126x etc).
-
-Drivers
-|--- BSP
-|     |--- B-L072Z-LRWAN1: bsp for B-L072Z-LRWAN1 board
-|     |--- CMWX1ZZABZ_0xx: bsp for CMWX1ZZABZ_0xx series of LoRaWAN modules manufactured by Murata Electronics
-|     |--- components
-|     |         |--- common: don`t know exactly (https://github.com/STMicroelectronics/stm32-bsp-common)
-|     |         |--- hts221: header files for the HTS221 humidity-temperature sensor (https://github.com/STMicroelectronics/stm32-hts221)
-|     |         |--- lis2dw12: header files for the LIS2DW12 accelerometer sensor
-|     |         |--- lis2mdl: header files for the LIS2MDL magnetic sensor
-|     |         |--- lps22hb: header files for the lps22hb pressure sensor
-|     |         |--- lps22hh: header files for the lps22hh pressure sensor
-|     |         |--- lps25hb: header files for the lps25hb pressure sensor
-|     |         |--- lsm6dsl: header files for the lsm6dsl imu
-|     |         |--- lsm6dso: header files for the lsm6dso imu
-|     |         |--- lsm303agr: header files for the lsm303agr imu
-|     |         |--- stts751: header files for the stts751 temperature sensor
-|     |
-|     |--- IKS01A2: bsp for X-NUCLEO-IKS01A2 motion MEMS and environmental sensor expansion board
-|     |--- IKS01A3: bsp for X-NUCLEO-IKS01A3 motion MEMS and environmental sensor expansion board
-|     |--- I_NUCLEO_LRWAN1: bsp for I-NUCLEO-LRWAN1 board
-|     |--- LRWAN_NS1: bsp for LRWAN_NS1 ARDUINO® compatible expansion board
-|     |--- MDM32L07X01: ?
-|     |--- MDM32WL: ?
-|     |--- STM32L0xx_Nucleo: bsp for STM32L0xx_Nucleo 
-|     |--- STM32L1xx_Nucleo: bsp for STM32L1xx_Nucleo 
-|     |--- STM32L4xx_Nucleo: bsp for STM32L4xx_Nucleo 
-|     |--- sx1276mb1las: bsp for Semtech lora expansion board
-|     |--- sx1272mb2das: bsp for Semtech lora expansion board
-|     |--- sx1276mb1mas: bsp for Semtech lora expansion board
-|     |--- SX1261DVK1BAS: bsp for Semtech lora expansion board
-|     |--- SX1262DVK1CAS: bsp for Semtech lora expansion board
-|     |--- SX1262DVK1DAS: bsp for Semtech lora expansion board
 |
-|--- CMSIS
-|--- STM32L0xx_HAL_Driver
-|--- STM32L1xx_HAL_Driver
-|--- STM32L4xx_HAL_Driver
-|     |--- 
+├── Drivers/
+|   ├── BSP/
+|   |   ├── B-L072Z-LRWAN1/ : bsp for B-L072Z-LRWAN1 board
+|   |   ├── CMWX1ZZABZ_0xx/ : bsp for CMWX1ZZABZ_0xx series of LoRaWAN modules manufactured by Murata Electronics
+|   |   ├── components/
+|   |   |         ├── common : don`t know exactly (https://github.com/STMicroelectronics/stm32-bsp-common)
+|   |   |         ├── hts221 : header files for the HTS221 humidity-temperature sensor (https://github.com/STMicroelectronics/stm32-hts221)
+|   |   |         ├── lis2dw12 : header files for the LIS2DW12 accelerometer sensor
+|   |   |         ├── lis2mdl : header files for the LIS2MDL magnetic sensor
+|   |   |         ├── lps22hb : header files for the lps22hb pressure sensor
+|   |   |         ├── lps22hh : header files for the lps22hh pressure sensor
+|   |   |         ├── lps25hb : header files for the lps25hb pressure sensor
+|   |   |         ├── lsm6dsl : header files for the lsm6dsl imu
+|   |   |         ├── lsm6dso : header files for the lsm6dso imu
+|   |   |         ├── lsm303agr : header files for the lsm303agr imu
+|   |   |         └── stts751 : header files for the stts751 temperature sensor
+|   |   ├── IKS01A2/ : bsp for X-NUCLEO-IKS01A2 motion MEMS and environmental sensor expansion board
+|   |   ├── IKS01A3/ : bsp for X-NUCLEO-IKS01A3 motion MEMS and environmental sensor expansion board
+|   |   ├── I_NUCLEO_LRWAN1/ : bsp for I-NUCLEO-LRWAN1 board
+|   |   ├── LRWAN_NS1/ : bsp for LRWAN_NS1 ARDUINO® compatible expansion board
+|   |   ├── MDM32L07X01/ : ?
+|   |   ├── MDM32WL/ : ?
+|   |   ├── STM32L0xx_Nucleo/ : bsp for STM32L0xx_Nucleo 
+|   |   ├── STM32L1xx_Nucleo/ : bsp for STM32L1xx_Nucleo 
+|   |   ├── STM32L4xx_Nucleo/ : bsp for STM32L4xx_Nucleo 
+|   |   ├── sx1276mb1las/ : bsp for Semtech lora expansion board
+|   |   ├── sx1272mb2das/ : bsp for Semtech lora expansion board
+|   |   ├── sx1276mb1mas/ : bsp for Semtech lora expansion board
+|   |   ├── SX1261DVK1BAS/ : bsp for Semtech lora expansion board
+|   |   ├── SX1262DVK1CAS/ : bsp for Semtech lora expansion board
+|   |   └── SX1262DVK1DAS/ : bsp for Semtech lora expansion board
+|   ├── CMSIS/
+|   ├── STM32L0xx_HAL_Driver/
+|   ├── STM32L1xx_HAL_Driver/
+|   ├── STM32L4xx_HAL_Driver/
+|   |   ├── 
 
 ```
 
@@ -85,17 +95,26 @@ Drivers
   - act as a gayway between and top level application and low-level chip driver.
 
 # Configuration
-## choose frequency channel (not verified yet)
-- How to choose indian frequency channel ? check app/APP/lora_app.h
+## choose frequency channel
+- go to LoRaWAN/APP/lora_app.h and edit the following macros
 ```
 /* LoraWAN application configuration (Mw is configured by lorawan_conf.h) */
 #define ACTIVE_REGION                               LORAMAC_REGION_IN865
 ```
-## Select Activation type (not verified yet)
-- check applications -> LoRaWAN/APP/lora_app.h
+- you can see the implementation of ACTIVE_REGION as enum definition in `middlewares/LoRaWAN/Mac/LoRaMac.h` and the values are used inside `LoRaWAN/APP/lora_app.c`
+
+## Select Activation type
+- go to -> LoRaWAN/APP/lora_app.h and edit the following macros
 ```
 #define LORAWAN_DEFAULT_ACTIVATION_TYPE   -> ACTIVATION_TYPE_OTAA/ACTIVATION_TYPE_ABP
 ```
+- if you dont want to hardcode it, Add the following flag to your compiler options
+```
+-DLORAWAN_DEFAULT_ACTIVATION_TYPE=ACTIVATION_TYPE_ABP
+```
+- you can see the implementation of ACTIVATION_TYPE as enum definition in `middlewares/LoRaWAN/Mac/LoRaMac.h` and the values are used inside `LoRaWAN/APP/lora_app.c`
+  - static ActivationType_t ActivationType = LORAWAN_DEFAULT_ACTIVATION_TYPE;
+
 ## Add activation keys
 - **Note**: secure-element implementation supports both 1.0.x and 1.1.x LoRaWAN versions. read the doc in app/App/se-identity.h to see the changes in keys
 ### ABP
