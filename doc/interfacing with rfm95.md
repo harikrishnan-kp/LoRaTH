@@ -28,3 +28,8 @@ Ensure the module is powered with **3.3V only** (not 5V tolerant).
 ## how to proceed 
 - import sx1276mb1mas or sx1276mb1las project to STMcubeide and alter pins and try to send a dummy packet with RFM95
 - if everything is correct try to incoperate it in this repo 
+
+## resources
+- https://github.com/henriheimann/stm32-hal-rfm95
+- https://github.com/MarcoMiglio/STM32_RFM95?tab=readme-ov-file
+- https://github.com/iwanders/plainRFM95
