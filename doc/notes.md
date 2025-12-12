@@ -3,13 +3,37 @@
 icube lrwan/
 ├── Applications/
 |   ├── Core/ : application level codes of STM32
-│   │   └── 
+│   │   └── src : main entry point of program
+|   |    
 │   ├── LoRaWAN/ : application level codes of LoRaWAN
 │   │   ├── App/
+|   |   |   ├── app_lorawan.c : entry point of lora stack
+|   |   |   ├── lora_app.c : main file of lora stack where everything defined 
+|   |   |   
 │   │   ├── Target/
-│   │   │   ├── sx1276mb1mas_conf.h : pin mapping of this shield
-│   │   │   └── radio_board_if.h : define which lora hat board's header file to include and its initialization.
+|   |   |   ├── iks01a2_conf.h — sensor/shield configuration for IKS01A2 expansion (sensor pin, bus mappings). Used to adapt sensor drivers to the board/shield wiring.
+|   |   |   ├── iks01a3_conf.h — sensor/shield configuration for IKS01A3 expansion (same purpose as above for IKS01A3).
+|   |   |   ├── lorawan_conf.h — LoRaWAN stack configuration (regions, features, stack compile-time options). Controls which LoRaWAN middleware features/regions are compiled.
+|   |   |   ├── lorawan_conf.h — LoRaWAN stack configuration (regions, features, stack compile-time options). Controls which LoRaWAN middleware features/regions are compiled.
+|   |   |   ├── mw_log_conf.h — middleware logging configuration (trace levels, printf mapping) used by middleware and drivers.
+|   |   |   ├── nucleo_l476rg_bus.c — board-specific bus implementations (SPI/I2C abstractions) for the NUCLEO-L476RG board.
+|   |   |   ├── nucleo_l476rg_bus.h — header for the above bus implementations.
+|   |   |   ├── nucleo_l476rg_errno.h — board/OS errno mapping and error helpers for NUCLEO-L476RG.
+|   |   |   ├── radio_board_if.h — board-to-radio adapter: maps which radio board API to call (e.g., Sx_Board_IoInit -> SX1276MB1MAS_RADIO_IoInit) based on compile symbols (SX1276MB1MAS, SX1276MB1LAS, CMWX1ZZABZ0XX, …).
+|   |   |   ├── radio_conf.h — central radio configuration header (includes platform.h, radio_board_if.h, provides RADIO_DELAY_MS, RADIO_MEMSET8, RADIO_MEMCPY8, RADIO_DIOn checks). Included by target board config headers and radio driver code to provide the board/middleware glue.
+|   |   |   ├── stm32l4xx_nucleo_conf.h — Nucleo L4 board-specific definitions (LEDs, buttons, clocks).
+|   |   |   ├── sx1261dvk1bas_conf.h — pin / SPI / DIO mapping for the SX1261 DVK shield (board-specific radio shield config).
+|   |   |   ├── sx1262dvk1cas_conf.h — pin / SPI / DIO mapping for an SX1262 DVK shield variant.
+|   |   |   ├── sx1262dvk1das_conf.h — another SX1262 DVK shield variant mapping.
+|   |   |   ├── sx1272mb2das_conf.h — pin / SPI / DIO mapping for SX1272-based shield (board-specific radio shield config).
+|   |   |   ├── sx1276mb1las_conf.h — pin / SPI / DIO mapping for SX1276MB1LAS daughterboard.
+|   |   |   ├── sx1276mb1mas_conf.h — pin / SPI / DIO mapping for SX1276MB1MAS daughterboard.
+|   |   |   ├── systime.h — system time abstraction header used by the radio stack / timers.
+|   |   |   └── timer.h — timer abstraction header used by the radio/middleware (timer APIs the middleware expects).
+│   │   |
 │   └── SW4STM32/
+|       ├── startup_stm32l476rgtx.s : startup assembly for STM32L476RGTx (vector table, initial stack pointer, reset handler, default IRQ handlers). This file sets up the CPU state on reset and branches to the C runtime entry (typically SystemInit and main). Used by SW4STM32 / STM32Cube toolchains as the MCU startup file.
+|       └── syscalls.c : C file implementing low-level system call stubs (e.g., _write, _read, _sbrk, _close, _fstat, _isatty) used to retarget the C library (newlib) syscalls to the board (UART/semihosting). This lets functions like printf work on the target by routing output to a UART or semihosting channel.
 |
 ├── Middlewares/
 │   ├── LoRaWAN/
