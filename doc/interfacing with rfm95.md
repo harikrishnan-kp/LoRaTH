@@ -30,8 +30,7 @@ Ensure the module is powered with **3.3V only** (not 5V tolerant).
 - The difference is only in the board support package (BSP) mapping (GPIO pins: NSS, DIO0–DIO5, RESET, SPI lines).
 - so we can reuse the SX1276MB1MAS / SX1276MB1LAS prebuilt project in I-CUBE-LRWAN to inteface with RFM95
 - Just adapt the GPIO mapping in the board driver file (sx1276mb1mas_conf.h or sx1276mb1las_conf.h) present in application/target directory, and make sure TCXO handling is disabled (since RFM95 uses a crystal).
-- you can control activation mode (ABP/OTA), etc in Application/App/`lora_info.c`
-- select your region in Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/Target/lorawan_conf.h
+
 
 ## status
 - ✔ Firmware is running
