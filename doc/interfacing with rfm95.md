@@ -34,16 +34,16 @@ Ensure the module is powered with **3.3V only** (not 5V tolerant).
 - select your region in Applications/LoRaWAN/LoRaWAN_End_Node/LoRaWAN/Target/lorawan_conf.h
 
 ## status
-✔ Firmware is running
-✔ LoRaWAN stack is alive
-✔ Radio TX is attempted
-❌ TX never completes
+- ✔ Firmware is running
+- ✔ LoRaWAN stack is alive
+- ✔ Radio TX is attempted
+- ❌ TX never completes
     - Radio was commanded to transmit
     - Stack waited for RadioEvents->TxDone()
     - SX1276OnDio0Irq() was never called
-❌ DIO0 interrupt not working
-❌ Device stuck in ABP mode
-❌ Gateway never receives packet
+- ❌ DIO0 interrupt not working
+- ❌ Device stuck in ABP mode
+- ❌ Gateway never receives packet
 
 ## console output
 ```
@@ -87,9 +87,11 @@ MW_RADIO_VERSION:   V1.1.0
 - if everything is correct try to incoperate it in this repo 
 
 ## resources
-- https://github.com/henriheimann/stm32-hal-rfm95
-- https://github.com/MarcoMiglio/STM32_RFM95?tab=readme-ov-file
-- https://github.com/iwanders/plainRFM95
+- RFM95 datasheet: file:///home/hari/Downloads/RFM95W-V2.0.pdf
+- RFM95 github
+    - rfm https://github.com/henriheimann/stm32-hal-rfm95
+    - https://github.com/MarcoMiglio/STM32_RFM95?tab=readme-ov-file
+    - https://github.com/iwanders/plainRFM95
 - stm community
     - https://community.st.com/t5/stm32-mcus-wireless/interfacing-external-sensors-with-i-cube-lrwan-end-node/m-p/728390
     - https://community.st.com/t5/user/viewprofilepage/user-id/89100
