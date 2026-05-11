@@ -28,7 +28,26 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#ifdef SX1276MB1LAS
+#ifdef RFM95
+
+#include "rfm95_board.h"
+
+#define Sx_Board_IoInit            RFM95_RADIO_IoInit
+#define Sx_Board_IoDeInit          RFM95_RADIO_IoDeInit
+#define Sx_Board_IoIrqInit         RFM95_RADIO_IoIrqInit
+#define Sx_Board_SendRecv          RFM95_RADIO_SendRecv
+#define Sx_Board_ChipSelect        RFM95_RADIO_ChipSelect
+#define Sx_Board_CheckRfFrequency  RFM95_RADIO_CheckRfFrequency
+#define Sx_Board_Reset             RFM95_RADIO_Reset
+#define Sx_Board_SetXO             RFM95_RADIO_SetXO
+#define Sx_Board_GetWakeUpTime     RFM95_RADIO_GetWakeUpTime
+#define Sx_Board_GetPaSelect       RFM95_RADIO_GetPaSelect
+#define Sx_Board_SetAntSw          RFM95_RADIO_SetAntSw
+#define Sx_Board_Bus_Init          RFM95_RADIO_Bus_Init
+#define Sx_Board_Bus_deInit        RFM95_RADIO_Bus_deInit
+#define Sx_Board_GetDio1PinState   RFM95_RADIO_GetDio1PinState
+
+#elif defined(SX1276MB1LAS)
 
 #include "sx1276mb1las.h"
 
