@@ -250,6 +250,11 @@ void LoRaWAN_Init(void)
   UTIL_TIMER_SetPeriod(&RxLedTimer, 500);
   UTIL_TIMER_SetPeriod(&JoinLedTimer, 500);
 
+  APP_LOG(TS_OFF, VLEVEL_M, "LoRaWAN bring-up: region=%d activation=%s tx_period=%dms\r\n",
+          ACTIVE_REGION,
+          (ActivationType == ACTIVATION_TYPE_ABP) ? "ABP" : "OTAA",
+          APP_TX_DUTYCYCLE);
+
   /* USER CODE END LoRaWAN_Init_1 */
 
   UTIL_SEQ_RegTask((1 << CFG_SEQ_Task_LmHandlerProcess), UTIL_SEQ_RFU, LmHandlerProcess);
@@ -459,13 +464,21 @@ static void SendTxData(void)
   AppData.BufferSize = i;
 #endif /* CAYENNE_LPP */
 
+  APP_LOG(TS_ON, VLEVEL_M, "STM32 example uplink request: port=%d temp=%d pressure=%d humidity=%d battery=%d size=%d\r\n",
+          AppData.Port, temperature, pressure, (uint16_t)(sensor_data.humidity * 10), GetBatteryLevel(),
+          AppData.BufferSize);
+
   if (LORAMAC_HANDLER_SUCCESS == LmHandlerSend(&AppData, LORAWAN_DEFAULT_CONFIRMED_MSG_STATE, &nextTxIn, false))
   {
-    APP_LOG(TS_ON, VLEVEL_L, "SEND REQUEST\r\n");
+    APP_LOG(TS_ON, VLEVEL_M, "SEND REQUEST accepted by LoRaWAN stack\r\n");
+  }
+  else if (nextTxIn == 0)
+  {
+    APP_LOG(TS_ON, VLEVEL_M, "SEND REQUEST rejected by LoRaWAN stack\r\n");
   }
   else if (nextTxIn > 0)
   {
-    APP_LOG(TS_ON, VLEVEL_L, "Next Tx in  : ~%d second(s)\r\n", (nextTxIn / 1000));
+    APP_LOG(TS_ON, VLEVEL_M, "Next Tx in  : ~%d second(s)\r\n", (nextTxIn / 1000));
   }
 
   /* USER CODE END SendTxData_1 */

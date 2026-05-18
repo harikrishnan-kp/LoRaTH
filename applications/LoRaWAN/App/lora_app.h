@@ -40,7 +40,7 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 
 /* LoraWAN application configuration (Mw is configured by lorawan_conf.h) */
-#define ACTIVE_REGION                               LORAMAC_REGION_EU868
+#define ACTIVE_REGION                               LORAMAC_REGION_IN865
 
 /*!
  * CAYENNE_LPP is myDevices Application server.
@@ -51,6 +51,13 @@ extern "C" {
  * Defines the application data transmission duty cycle. 10s, value in [ms].
  */
 #define APP_TX_DUTYCYCLE                            10000
+
+/*!
+ * Use ABP for first radio/server bring-up so dummy uplinks are sent without
+ * waiting for an OTAA join accept. Register the same DevAddr/NwkSKey/AppSKey
+ * from se-identity.h on the LoRaWAN server.
+ */
+#define LORATH_BRINGUP_USE_ABP                      1
 
 /*!
  * LoRaWAN User application port
@@ -89,7 +96,11 @@ extern "C" {
 /*!
  * LoRaWAN default activation type
  */
+#if (LORATH_BRINGUP_USE_ABP == 1)
+#define LORAWAN_DEFAULT_ACTIVATION_TYPE             ACTIVATION_TYPE_ABP
+#else
 #define LORAWAN_DEFAULT_ACTIVATION_TYPE             ACTIVATION_TYPE_OTAA
+#endif
 
 /*!
  * User application data buffer size

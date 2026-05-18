@@ -231,6 +231,8 @@ UTIL_ADV_TRACE_Status_t UTIL_ADV_TRACE_COND_FSend(uint32_t VerboseLevel, uint32_
   }
 
   va_start( vaArgs, strFormat);
+  va_list vaArgsCopy;
+  va_copy(vaArgsCopy, vaArgs);
   buff_size =(uint16_t)UTIL_ADV_TRACE_VSNPRINTF((char *)sztmp,UTIL_ADV_TRACE_TMP_BUF_SIZE, strFormat, vaArgs);
 
   TRACE_Lock();
@@ -256,7 +258,8 @@ UTIL_ADV_TRACE_Status_t UTIL_ADV_TRACE_COND_FSend(uint32_t VerboseLevel, uint32_
     }
 
     /* copy the data */
-    (void)UTIL_ADV_TRACE_VSNPRINTF((char *)(&ADV_TRACE_Buffer[writepos]), UTIL_ADV_TRACE_TMP_BUF_SIZE, strFormat, vaArgs);
+    (void)UTIL_ADV_TRACE_VSNPRINTF((char *)(&ADV_TRACE_Buffer[writepos]), UTIL_ADV_TRACE_TMP_BUF_SIZE, strFormat, vaArgsCopy);
+    va_end(vaArgsCopy);
     va_end(vaArgs);
 
     TRACE_UnLock();
@@ -264,6 +267,7 @@ UTIL_ADV_TRACE_Status_t UTIL_ADV_TRACE_COND_FSend(uint32_t VerboseLevel, uint32_
     return TRACE_Send();
   }
 
+  va_end(vaArgsCopy);
   va_end(vaArgs);
   TRACE_UnLock();
 #if defined(UTIL_ADV_TRACE_OVERRUN)

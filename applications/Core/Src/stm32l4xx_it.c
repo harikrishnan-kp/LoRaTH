@@ -250,7 +250,7 @@ void EXTI15_10_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
 }
 
-void DMA1_Channel7_IRQHandler(void)
+void DMA1_CH7_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel7_IRQn 0 */
 
@@ -259,6 +259,11 @@ void DMA1_Channel7_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel7_IRQn 1 */
 
   /* USER CODE END DMA1_Channel7_IRQn 1 */
+}
+
+void DMA1_Channel7_IRQHandler(void)
+{
+  DMA1_CH7_IRQHandler();
 }
 
 /**
@@ -278,7 +283,7 @@ void USART2_IRQHandler(void)
 /**
   * @brief This function handles RTC Alarms (A and B) Interrupt.
   */
-void RTC_Alarm_IRQHandler(void)
+void RTC_ALARM_IRQHandler(void)
 {
   /* USER CODE BEGIN RTC_Alarm_IRQn 0 */
 
@@ -287,6 +292,11 @@ void RTC_Alarm_IRQHandler(void)
   /* USER CODE BEGIN RTC_Alarm_IRQn 1 */
 
   /* USER CODE END RTC_Alarm_IRQn 1 */
+}
+
+void RTC_Alarm_IRQHandler(void)
+{
+  RTC_ALARM_IRQHandler();
 }
 
 /* USER CODE BEGIN 1 */
