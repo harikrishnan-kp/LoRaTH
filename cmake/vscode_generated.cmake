@@ -35,7 +35,6 @@ target_sources(${BUILD_UNIT_0_NAME} PRIVATE
     "applications/LoRaWAN/Target/frag_decoder_if.c"
     "applications/LoRaWAN/Target/nucleo_l476rg_bus.c"
     "applications/LoRaWAN/Target/rfm95_board.c"
-    "applications/SW4STM32/startup_stm32l476rgtx.s"
     "applications/SW4STM32/syscalls.c"
     "drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c"
     "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
@@ -184,9 +183,10 @@ target_sources(${BUILD_UNIT_0_NAME} PRIVATE
     "utilities/sequencer/stm32_seq.c"
     "utilities/timer/stm32_timer.c"
     "utilities/trace/adv_trace/stm32_adv_trace.c"
-)
-
-target_include_directories(${BUILD_UNIT_0_NAME} PRIVATE
+    "startup/startup_stm32l476rgtx.s"
+    )
+    
+    target_include_directories(${BUILD_UNIT_0_NAME} PRIVATE
     "."
     "applications/Core/Inc"
     "applications/LoRaWAN/App"

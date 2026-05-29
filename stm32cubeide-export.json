@@ -55,359 +55,360 @@
 
         { "path": "applications/LoRaWAN/Target/nucleo_l476rg_bus.c" },
 
-        { "path": "applications/SW4STM32/startup_stm32l476rgtx.s" },
-
+        
         { "path": "applications/SW4STM32/syscalls.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/HTS221_Driver.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/HTS221_Driver_HL.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/hts221.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/hts221_reg.c" },
-
+        
         { "path": "drivers/BSP/Components/stts751/stts751.c" },
-
+        
         { "path": "drivers/BSP/Components/stts751/stts751_reg.c" },
-
+        
         { "path": "drivers/BSP/MDM32L07X01/atcmd.c" },
-
+        
         { "path": "drivers/BSP/MDM32WL/mdm32wl_atcmd.c" },
-
+        
         { "path": "drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/Legacy/stm32l4xx_hal_can.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_crc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_crc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cryp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cryp_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dcmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma2d.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dsi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_firewall.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gfxmmu.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hash.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hash_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_irda.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_iwdg.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_lcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_lptim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ltdc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ltdc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_mmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_mmc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_msp_template.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_nand.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_nor.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_opamp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_opamp_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ospi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pka.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pssi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_qspi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rng.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rng_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sai.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sai_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smartcard.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smartcard_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smbus.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smbus_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sram.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_swpmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_timebase_tim_template.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tsc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_usart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_usart_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_wwdg.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_adc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_comp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_crc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_crs.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dac.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma2d.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_fmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_lptim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_lpuart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_opamp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_pka.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_pwr.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rng.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rtc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_spi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_swpmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_tim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Conf/lora_info_template.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/cmac.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/lorawan_aes.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/soft-se.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/LmHandler.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/NvmDataMgmt.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/FragDecoder.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpClockSync.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpCompliance.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpFragmentation.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpPackagesRegistration.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMac.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacAdr.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacClassB.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacCommands.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacConfirmQueue.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacCrypto.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacParser.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacSerializer.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/Region.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionAS923.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionAU915.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionBaseUS.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCN470.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCN779.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCommon.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionEU433.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionEU868.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionIN865.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionKR920.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionRU864.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionUS915.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Utilities/utilities.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/rfm95/rfm95.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx126x/radio.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx126x/sx126x.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx1272/sx1272.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx1276/sx1276.c" },
-
+        
         { "path": "utilities/lpm/tiny_lpm/stm32_lpm.c" },
-
+        
         { "path": "utilities/lpm/tiny_lpm/stm32_lpm_if_template.c" },
-
+        
         { "path": "utilities/misc/stm32_mem.c" },
-
+        
         { "path": "utilities/misc/stm32_systime.c" },
-
+        
         { "path": "utilities/misc/stm32_systime_if_template.c" },
-
+        
         { "path": "utilities/misc/stm32_tiny_sscanf.c" },
-
+        
         { "path": "utilities/misc/stm32_tiny_vsnprintf.c" },
-
+        
         { "path": "utilities/sequencer/stm32_seq.c" },
-
+        
         { "path": "utilities/timer/stm32_timer.c" },
-
+        
         { "path": "utilities/timer/stm32_timer_if_template.c" },
-
+        
         { "path": "utilities/trace/adv_trace/stm32_adv_trace.c" },
+        
+        { "path": "utilities/trace/adv_trace/stm32_adv_trace_if_template.c" },
 
-        { "path": "utilities/trace/adv_trace/stm32_adv_trace_if_template.c" }
+        { "path": "startup/startup_stm32l476rgtx.s" }
       ],
       "tools": [
-            {
-              "type": "c_assembler",
-              "options": {
-                      "option.debuglevel": "-g3"                   
-,                      "option.definedsymbols": "-DDEBUG"                   
-,                      "option.includepaths": "-I\"\""                   
-,                      "option.preprocessassembler": "-x assembler-with-cpp"                   
-              },
-
-              
-              "flags": [
-                  "-mfpu=fpv4-sp-d16",
-
-                  "-mfloat-abi=hard",
+        {
+          "type": "c_assembler",
+          "options": {
+            "option.debuglevel": "-g3"                   
+            ,                      "option.definedsymbols": "-DDEBUG"                   
+            ,                      "option.includepaths": "-I\"\""                   
+            ,                      "option.preprocessassembler": "-x assembler-with-cpp"                   
+          },
+          
+          
+          "flags": [
+            "-mfpu=fpv4-sp-d16",
+            
+            "-mfloat-abi=hard",
 
                   "-mthumb",
 
@@ -683,367 +684,368 @@
 
         { "path": "applications/LoRaWAN/Target/nucleo_l476rg_bus.c" },
 
-        { "path": "applications/SW4STM32/startup_stm32l476rgtx.s" },
-
+        
         { "path": "applications/SW4STM32/syscalls.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/HTS221_Driver.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/HTS221_Driver_HL.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/hts221.c" },
-
+        
         { "path": "drivers/BSP/Components/hts221/hts221_reg.c" },
-
+        
         { "path": "drivers/BSP/Components/stts751/stts751.c" },
-
+        
         { "path": "drivers/BSP/Components/stts751/stts751_reg.c" },
-
+        
         { "path": "drivers/BSP/MDM32L07X01/atcmd.c" },
-
+        
         { "path": "drivers/BSP/MDM32WL/mdm32wl_atcmd.c" },
-
+        
         { "path": "drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/Legacy/stm32l4xx_hal_can.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_crc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_crc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cryp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cryp_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dcmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma2d.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dsi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_firewall.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gfxmmu.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hash.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hash_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_hcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_irda.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_iwdg.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_lcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_lptim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ltdc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ltdc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_mmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_mmc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_msp_template.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_nand.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_nor.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_opamp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_opamp_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_ospi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pka.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pssi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_qspi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rng.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rng_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sai.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sai_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smartcard.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smartcard_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smbus.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_smbus_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sram.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_swpmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_timebase_tim_template.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tsc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_usart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_usart_ex.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_wwdg.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_adc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_comp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_crc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_crs.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dac.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma2d.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_fmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_i2c.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_lptim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_lpuart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_opamp.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_pka.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_pwr.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rng.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rtc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_spi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_swpmi.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_tim.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.c" },
-
+        
         { "path": "drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Conf/lora_info_template.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/cmac.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/lorawan_aes.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Crypto/soft-se.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/LmHandler.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/NvmDataMgmt.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/FragDecoder.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpClockSync.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpCompliance.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpFragmentation.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpPackagesRegistration.c" },
-
+        
         { "path": "middlewares/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMac.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacAdr.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacClassB.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacCommands.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacConfirmQueue.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacCrypto.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacParser.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/LoRaMacSerializer.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/Region.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionAS923.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionAU915.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionBaseUS.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCN470.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCN779.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionCommon.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionEU433.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionEU868.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionIN865.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionKR920.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionRU864.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Mac/Region/RegionUS915.c" },
-
+        
         { "path": "middlewares/LoRaWAN/Utilities/utilities.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/rfm95/rfm95.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx126x/radio.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx126x/sx126x.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx1272/sx1272.c" },
-
+        
         { "path": "middlewares/SubGHz_Phy/sx1276/sx1276.c" },
-
+        
         { "path": "utilities/lpm/tiny_lpm/stm32_lpm.c" },
-
+        
         { "path": "utilities/lpm/tiny_lpm/stm32_lpm_if_template.c" },
-
+        
         { "path": "utilities/misc/stm32_mem.c" },
-
+        
         { "path": "utilities/misc/stm32_systime.c" },
-
+        
         { "path": "utilities/misc/stm32_systime_if_template.c" },
-
+        
         { "path": "utilities/misc/stm32_tiny_sscanf.c" },
-
+        
         { "path": "utilities/misc/stm32_tiny_vsnprintf.c" },
-
+        
         { "path": "utilities/sequencer/stm32_seq.c" },
-
+        
         { "path": "utilities/timer/stm32_timer.c" },
-
+        
         { "path": "utilities/timer/stm32_timer_if_template.c" },
-
+        
         { "path": "utilities/trace/adv_trace/stm32_adv_trace.c" },
+        
+        { "path": "utilities/trace/adv_trace/stm32_adv_trace_if_template.c" },
 
-        { "path": "utilities/trace/adv_trace/stm32_adv_trace_if_template.c" }
+        { "path": "startup/startup_stm32l476rgtx.s" }
       ],
       "tools": [
-            {
-              "type": "c_assembler",
-              "options": {
-                      "option.includepaths": "-I\"\""                   
-,                      "option.preprocessassembler": "-x assembler-with-cpp"                   
-              },
-
-              
-              "flags": [
-                  "-mfpu=fpv4-sp-d16",
-
-                  "-mfloat-abi=hard",
-
-                  "-mthumb",
-
-                  "--specs=nano.specs",
-
-                  "-mcpu=cortex-m4",
-
-                  "-I\"\"",
-
-                  "-x",
+        {
+          "type": "c_assembler",
+          "options": {
+            "option.includepaths": "-I\"\""                   
+            ,                      "option.preprocessassembler": "-x assembler-with-cpp"                   
+          },
+          
+          
+          "flags": [
+            "-mfpu=fpv4-sp-d16",
+            
+            "-mfloat-abi=hard",
+            
+            "-mthumb",
+            
+            "--specs=nano.specs",
+            
+            "-mcpu=cortex-m4",
+            
+            "-I\"\"",
+            
+            "-x",
 
                   "assembler-with-cpp"
               ]

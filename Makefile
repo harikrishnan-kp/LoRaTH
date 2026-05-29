@@ -239,7 +239,7 @@ C_SOURCES := \
   utilities/timer/stm32_timer.c \
   utilities/trace/adv_trace/stm32_adv_trace.c
 
-ASM_SOURCES := applications/SW4STM32/startup_stm32l476rgtx.s
+ASM_SOURCES := startup/startup_stm32l476rgtx.s
 
 OBJECTS := \
   $(addprefix $(OBJ_DIR)/,$(C_SOURCES:.c=.o)) \
