@@ -1,7 +1,5 @@
 # Build output
 build/
-Debug/
-Release/
 
 # CMake / Ninja generated files
 CMakeCache.txt
@@ -12,26 +10,10 @@ build.ninja
 .ninja_deps
 .ninja_log
 
-# Firmware build artifacts
-*.elf
-*.hex
-*.bin
-*.map
-*.list
-*.lst
-*.su
-*.o
-*.obj
-*.d
-
 # Local IDE metadata
-.vscode/*
-!.vscode/extensions.json
-.settings/ide.store.json
+.vscode/
+.settings/
+.codex/
+.agents/
 
-# OS/editor noise
-*~
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
+.clangd
