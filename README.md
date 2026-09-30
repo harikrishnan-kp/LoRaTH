@@ -29,24 +29,24 @@ export PATH=<install_dir>/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin:$
 # If Ninja is installed by STM32Cube instead of the system package manager:
 export PATH=$HOME/.local/share/stm32cube/bundles/ninja/1.13.1+st.1/bin:$PATH
 
-# Configure and build Debug firmware
-cmake --preset Debug
-cmake --build --preset Debug
-
 # Configure and build Release firmware
 cmake --preset Release
 cmake --build --preset Release
+
+# Configure and build Debug firmware
+cmake --preset Debug
+cmake --build --preset Debug
 ```
 
 Build outputs are written to `build/Debug` or `build/Release`.
 
 ### Make
 ```bash
-# Build Debug firmware 
+# Build Release firmware
 make
 
-# Build Release firmware
-make BUILD=Release
+# Build Debug firmware 
+make BUILD=Debug
 
 # Remove Make build outputs
 make clean

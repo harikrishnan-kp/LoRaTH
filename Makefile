@@ -1,5 +1,5 @@
 TARGET := LoRaTH
-BUILD ?= Debug
+BUILD ?= Release
 PREFIX ?= arm-none-eabi-
 
 BUILD_DIR := build/make/$(BUILD)
@@ -23,9 +23,9 @@ ifeq ($(BUILD),Debug)
 OPT_FLAGS := -O0 -g3
 DEFS += -DDEBUG
 else ifeq ($(BUILD),Release)
-OPT_FLAGS := -Os
+OPT_FLAGS := -Os -g
 else
-$(error BUILD must be Debug or Release)
+$(error BUILD must be Debug or Release (got '$(BUILD)'))
 endif
 
 INCLUDE_DIRS := \
@@ -287,8 +287,8 @@ clean:
 	$(RM) -r build/make
 
 help:
-	@echo "make                 Build Debug firmware"
-	@echo "make BUILD=Release   Build Release firmware"
+  @echo "make                 Build Release firmware"
+  @echo "make BUILD=Debug     Build Debug firmware"
 	@echo "make clean           Remove make build outputs"
 	@echo "Outputs: $(BUILD_DIR)/$(TARGET).elf .bin .hex .map"
 
