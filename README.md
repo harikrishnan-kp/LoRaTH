@@ -4,14 +4,12 @@ LoRaWAN Temperature & Humidity End Node using STM32L476RG
 
 ## Prerequisites
 
-- **GNU Arm Embedded Toolchain**: Ensure [GNU Arm Embedded Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads) `13.3.Rel1` or newer is installed and available in your `PATH`.
+- **GNU Arm Embedded Toolchain**: Ensure [GNU Arm Embedded Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads) `13.3.Rel1` or newer is installed and available in your `PATH`. [***Note: Older toolchains, including version 10.x, are not supported because the linker script uses syntax accepted by newer GNU linkers.***]()
   ```bash
-  # Note
-  Older toolchains, including version 10.x, are not supported because the linker script uses syntax accepted by newer GNU linkers.
-  ```
-  ```bash
+  # add to path
   export PATH=<install_dir>/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin:$PATH
   
+  # verify installation
   arm-none-eabi-gcc --version
   ```
 - **Make** (if building with Make): Make is typically available by default on Linux systems.
@@ -24,8 +22,6 @@ LoRaWAN Temperature & Humidity End Node using STM32L476RG
 The build flow uses CMake presets with the Ninja generator. Install Ninja, or add the STM32Cube bundled Ninja directory to `PATH`.
 
 ```bash
-export PATH=<install_dir>/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin:$PATH
-
 # If Ninja is installed by STM32Cube instead of the system package manager:
 export PATH=$HOME/.local/share/stm32cube/bundles/ninja/1.13.1+st.1/bin:$PATH
 
